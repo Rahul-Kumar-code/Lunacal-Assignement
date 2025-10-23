@@ -1,4 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Lunacal Assignment UI
+
+A polished, responsive single-page experience built with Next.js 16, Tailwind CSS v4, and React 19. The design recreates the provided Lunacal assignment mockup featuring an "About Me" profile widget, an interactive gallery widget, custom scrollbar treatments, and rich hover interactions.
+
+## ✨ Features
+
+- **Responsive layout** – Mobile-first column layout that expands to a split desktop view without wasting space on smaller screens.
+- **About Me widget** – Tabbed content (About Me, Experiences, Recommended) with custom scroll indicator styling and subtle transitions.
+- **Gallery widget** – Horizontal carousel with snap scrolling, keyboard-accessible arrow controls, and client-side image uploads via object URLs.
+- **Interactive polish** – Hover tilt/scale animations, soft shadows, customized scrollbars, and divider accents to match the supplied design reference.
+- **TypeScript first** – Strong typing across components to ease future enhancements.
+
+## 🏁 Getting Started
+
+```bash
+# install dependencies
+npm install
+
+# start the development server
+npm run dev
+```
+
+The app runs at [http://localhost:3000](http://localhost:3000). Tailwind styles hot-reload while you edit files under `app/` and `components/`.
+
+## 📁 Project Structure
+
+```
+app/
+  layout.tsx        # Root layout shell
+  page.tsx          # Main page rendering both widgets
+components/
+  AboutMeWidget.tsx # Profile tabs & custom scrollbar
+  GalleryWidget.tsx # Carousel, upload handling, hover effects
+public/images/      # Default gallery seed images
+```
+
+## 🔧 Customization Tips
+
+- Update the introductory copy and experience details by editing the `TAB_CONTENT` map in `components/AboutMeWidget.tsx`.
+- Replace or add default gallery items by dropping images into `public/images/` and adjusting `INITIAL_IMAGES` in `components/GalleryWidget.tsx`.
+- Tweak hover motion or sizing using Tailwind utilities inside each component.
+
+## ✅ Testing & Linting
+
+This project ships with Next.js defaults. You can run:
+
+```bash
+npm run lint
+```
+
+to catch TypeScript and ESLint issues. Add your preferred testing stack (e.g., Vitest, Jest, Playwright) as needed.
+
+## 🚀 Deployment
+
+Any platform that supports Node.js can host the app. For the smoothest experience, deploy via [Vercel](https://vercel.com/) or your chosen static hosting provider:
+
+```bash
+npm run build
+npm start
+```
+
+## 🤝 Contributing
+
+1. Fork or clone the repository.
+2. Create a feature branch (`git checkout -b feature/amazing-improvement`).
+3. Commit with clear messages and open a pull request describing your change and screenshots where useful.
+
+---
+
+Need design tweaks or new modules? Open an issue or start a discussion—happy to iterate!This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
